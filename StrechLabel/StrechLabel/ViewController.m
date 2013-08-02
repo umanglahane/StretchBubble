@@ -14,21 +14,21 @@
 @end
 
 @implementation ViewController
-@synthesize imagAqua,imagOrange;
+@synthesize imagAquaBubble,imagOrangeBubble;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    [imagAqua setImage:[[UIImage imageNamed:@"aqua"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 24, 15, 24) resizingMode:UIImageResizingModeStretch]];
-    [imagAqua.layer setShadowColor:[UIColor orangeColor].CGColor];
-    [imagAqua.layer setShadowOffset:CGSizeMake(0, 5)];
-    [imagAqua.layer setShadowOpacity:0.5];
+    [imagAquaBubble setImage:[[UIImage imageNamed:@"aquaBubble"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 24, 15, 24) resizingMode:UIImageResizingModeStretch]];
+    [imagAquaBubble.layer setShadowColor:[UIColor orangeColor].CGColor];
+    [imagAquaBubble.layer setShadowOffset:CGSizeMake(0, 5)];
+    [imagAquaBubble.layer setShadowOpacity:0.5];
     
-    [imagOrange setImage:[[UIImage imageNamed:@"orange"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 24, 15, 24) resizingMode:UIImageResizingModeStretch]];
-    [imagOrange.layer setShadowColor:[UIColor blueColor].CGColor];
-    [imagOrange.layer setShadowOffset:CGSizeMake(5, 5)];
-    [imagOrange.layer setShadowOpacity:0.5];
+    [imagOrangeBubble setImage:[[UIImage imageNamed:@"orangeBubble"] resizableImageWithCapInsets:UIEdgeInsetsMake(15, 24, 15, 24) resizingMode:UIImageResizingModeStretch]];
+    [imagOrangeBubble.layer setShadowColor:[UIColor blueColor].CGColor];
+    [imagOrangeBubble.layer setShadowOffset:CGSizeMake(5, 5)];
+    [imagOrangeBubble.layer setShadowOpacity:0.5];
 
 	// Do any additional setup after loading the view, typically from a nib.
 }

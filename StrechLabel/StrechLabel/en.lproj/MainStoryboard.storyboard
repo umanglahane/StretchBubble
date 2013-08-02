@@ -34,14 +34,26 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imagAqua" destination="DC0-pn-Cyn" id="LRw-09-4LV"/>
-                        <outlet property="imagOrange" destination="fU7-Az-VUR" id="GjB-tP-8f7"/>
+                        <outlet property="imagAquaBubble" destination="DC0-pn-Cyn" id="A38-ND-w60"/>
+                        <outlet property="imagOrangeBubble" destination="fU7-Az-VUR" id="Gmn-FB-9iV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imagAquaBubble" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="imagOrangeBubble" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
